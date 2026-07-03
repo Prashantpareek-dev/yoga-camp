@@ -1,0 +1,29 @@
+* text=auto eol=lf
+
+# Text/source files — normalize to LF
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.gs   text eol=lf
+
+# Binary/media — never touch line endings
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.JPG  binary
+*.JPEG binary
+*.gif  binary
+*.webp binary
+*.avif binary
+*.ico  binary
+*.svg  binary
+*.mp4  binary
+*.mov  binary
+*.webm binary
+*.pdf  binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary

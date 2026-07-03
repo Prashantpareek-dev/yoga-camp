@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Veda Yoga Ashram</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --cream: #FBF5DD;
+      --sand: #E7E1B1;
+      --green: #306D29;
+      --green-deep: #0D530E;
+      --gold: #C6A15B;
+      --gold-deep: #a9863f;
+      --ink: #2b2c24;
+      --ink-soft: #5b5d50;
+      --white: #ffffff;
+      --line: rgba(13, 83, 14, 0.12);
+      --shadow-lg: 0 30px 70px rgba(13, 83, 14, 0.18);
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top, #fdf9e8, var(--cream) 60%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 22px;
+      line-height: 1.6;
+    }
+
+    .card {
+      width: min(100%, 560px);
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      box-shadow: var(--shadow-lg);
+      padding: clamp(32px, 5vw, 56px);
+      text-align: center;
+      animation: riseIn 700ms var(--ease-out) both;
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .logo {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 1.4rem;
+      display: block;
+      object-fit: contain;
+    }
+
+    .check {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.4rem;
+      border-radius: 50%;
+      background: linear-gradient(140deg, var(--green), var(--green-deep));
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      box-shadow: 0 10px 24px rgba(13, 83, 14, 0.28);
+    }
+
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.7rem, 1.3rem + 1.6vw, 2.4rem);
+      color: var(--green-deep);
+      line-height: 1.15;
+      margin-bottom: 0.9rem;
+    }
+
+    h1 em {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--green);
+    }
+
+    p.lead {
+      color: var(--ink-soft);
+      font-size: clamp(0.98rem, 0.92rem + 0.3vw, 1.08rem);
+      max-width: 420px;
+      margin: 0 auto 1.8rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+      margin-bottom: 1.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.6rem;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 160ms var(--ease-out), box-shadow 220ms var(--ease-out), background 200ms ease;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--green-deep);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--green-deep);
+      border: 1.5px solid var(--green);
+    }
+
+    .btn-outline:hover {
+      background: var(--green);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .next-note {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      border-top: 1px solid var(--line);
+      padding-top: 1.2rem;
+    }
+
+    .next-note strong {
+      color: var(--green-deep);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img class="logo" src="Image/logos/1.avif" alt="Veda Yoga Ashram" />
+    <div class="check"><i class="fa-solid fa-check"></i></div>
+    <h1>Thank you — your seat request is <em>on its way</em></h1>
+    <p class="lead">We've received your registration for the 7-Day Himalayan Yoga &amp; Meditation Retreat. Our team
+      will confirm your booking within a few hours.</p>
+    <p class="next-note">Questions in the meantime? Email
+      <strong>hello@vedayogaashram.com</strong>.</p>
+  </div>
+</body>
+
+</html>
